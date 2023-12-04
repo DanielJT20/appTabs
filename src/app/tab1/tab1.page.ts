@@ -6,6 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
+  likes: number=0
+  addLikes(){
+    this.likes++
+  }
 
   constructor() {}
 
