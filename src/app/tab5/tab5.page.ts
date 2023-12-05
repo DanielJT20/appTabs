@@ -7,6 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Tab5Page implements OnInit {
 
+  user={
+    userName: 'root',
+    password: '123456'
+  }
+  logado: boolean=false
+
+  fazerLogin(user:any, pass:any){
+    if(this.user.userName=== user && this.user.password===pass){
+      this.logado=true
+    }
+  }
   constructor() { }
 
   ngOnInit() {
