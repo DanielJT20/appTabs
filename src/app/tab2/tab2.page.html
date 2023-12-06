@@ -1,22 +1,16 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <b><ion-label> PRODUTOS </ion-label></b>
-  </ion-toolbar>
-</ion-header>
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+
+<ion-content>
+ 
+  <ion-header>
     <ion-toolbar>
-      <ion-searchbar></ion-searchbar>
+      <ion-label> PRODUTOS </ion-label>
     </ion-toolbar>
-  </ion-header>
-  <ion-grid> <ion-card *ngFor="let p of produtos">
-    <ion-row>
-      <ion-col size="6" size-md="3" size-lg="2" class="i1">
-        <img  src={{p.imagem}}/>
-        <ion-card-header>
-          <ion-card-title>{{p.preco}}</ion-card-title>
-          <ion-card-subtitle>{{p.produto}}</ion-card-subtitle>
-        </ion-card-header><ion-button expand="block">Comprar</ion-button></ion-col>
-    </ion-row></ion-card>
-  </ion-grid>
+  </ion-header> <div class="card">
+  <ion-card *ngFor="let p of produtos">
+    <img src={{p.imagem}} />
+    <ion-card-header>
+      <ion-card-title>{{p.preco}}</ion-card-title>
+      <ion-card-subtitle>{{p.produto}}</ion-card-subtitle>
+    </ion-card-header><ion-button expand="block">Comprar</ion-button></ion-card>
+  </div>
 </ion-content>
