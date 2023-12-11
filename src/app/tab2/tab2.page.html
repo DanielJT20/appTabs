@@ -1,11 +1,11 @@
-
 <ion-content>
- 
   <ion-header>
-    <ion-toolbar>
-      <ion-label> PRODUTOS </ion-label>
-    </ion-toolbar>
-  </ion-header> <div class="card">
+  <ion-toolbar>
+    <ion-title>
+     Produtos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>  <div class="card">
   <ion-card *ngFor="let p of produtos">
     <img src={{p.imagem}} />
     <ion-card-header>

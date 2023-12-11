@@ -1,4 +1,18 @@
 <ion-content>
-  
-  
+<form *ngIf="!cad">
+    <h1> Formulario de Login </h1>
+    <ion-input label=" Email:" label-placement="floating" fill="outline" placeholder="insira seu email" #email></ion-input>
+    <ion-input label=" Senha:" type="password" label-placement="floating" fill="outline" placeholder="insira sua senha"
+    #senha></ion-input>
+      <ion-button >Login</ion-button>
+      <p>Não é cadastrado? </p><a (click)="cad=!cad">Cadastre-se</a>
+  </form>
+  <form *ngIf="cad">
+    <h1> Formulario de cadastro </h1>
+    <ion-input label="Email:" label-placement="floating" fill="outline" placeholder="Insira seu email"></ion-input>
+    <ion-input label="Senha:" type="password" label-placement="floating" fill="outline"
+      placeholder="Insira sua senha"></ion-input>
+    <ion-button> Cadastrar </ion-button>
+    <p>Já é cadastrado? </p> <a (click)="cad=!cad"> Fazer Login </a>
+  </form>
 </ion-content>

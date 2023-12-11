@@ -17,6 +17,7 @@ ion-card-title{
     color: rgb(255, 255, 255);
     font-weight: 800;
     border-radius: 10px;
+
 }
 .card{
     flex-wrap: wrap;
@@ -43,5 +44,7 @@ ion-button{
     font-size: 20px;
 }
 ion-content{
-    --background: url(../../assets/imagens/fundo_books.jpg) no-repeat center/cover fixed;
+    --background: url(../../assets/imagens/fundo.jpg) no-repeat center/cover fixed;
 }
+ion-title{
+    background-color: burlywood; }
